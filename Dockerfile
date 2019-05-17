@@ -5,6 +5,7 @@ RUN apt-get install -yy wget curl gnupg
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
 	apt-get update && apt-get install -y nodejs && \
   npm i -g npm@6
+RUN apt-get install openssh-client
 
 RUN node -v && npm -v
 
